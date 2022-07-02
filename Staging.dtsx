@@ -1,0 +1,1698 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/2/2022 6:13:38 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-B7TTBGH"
+  DTS:CreatorName="DESKTOP-B7TTBGH\Olexander"
+  DTS:DTSID="{BDAA564B-A015-4DD7-A3A5-276D51802F7E}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.521.0"
+  DTS:LocaleID="1058"
+  DTS:ObjectName="Staging"
+  DTS:PackageType="5"
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{EA5B87F6-364C-4830-A8B8-DCA38355EEE4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Connector to DataWork]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A532D465-BAAB-4424-AEE5-BBC4D16FA3B6}"
+      DTS:ObjectName="Connector to DataWork">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-B7TTBGH\MULTIDIMENTIONAL;Initial Catalog=DataWork;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{3ECA8FBF-B85A-4EEC-95C9-695B3C626245}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1058"
+          DTS:Unicode="True"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1251"
+          DTS:ConnectionString="C:\Users\Olexander\Documents\Work\15506\CSV\FlatFile.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="1"
+              DTS:DTSID="{6E32883F-5D0F-4B3C-9F24-260FE3E05D4F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="2"
+              DTS:DTSID="{4D82D9FC-FAC7-4564-8BC0-6B51E8C21EDC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="3"
+              DTS:DTSID="{C5CF1A26-89DA-49DC-B124-1037EF844B02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="4"
+              DTS:DTSID="{AD7A9E32-FE7D-4C85-9B5E-233D85289D49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="5"
+              DTS:DTSID="{CD8D40E3-13BE-46A0-8636-5E21F91108E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="6"
+              DTS:DTSID="{752B92DD-A83F-40C7-8E0D-27BFE0D76B23}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="7"
+              DTS:DTSID="{18C60948-0939-4FF8-A591-59E75917E991}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="8"
+              DTS:DTSID="{FC179302-E763-4E87-B64B-ED738C29D68A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="9"
+              DTS:DTSID="{DC09A502-1CC6-4838-9FB4-66F1D2EC5D46}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="10"
+              DTS:DTSID="{12224581-9CD9-400A-A28A-E2451180F9CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="11"
+              DTS:DTSID="{3A6D2CC5-DE1A-4FE5-AA81-1730E8D734CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="12"
+              DTS:DTSID="{602A4DBB-1ED2-4A2C-B1E7-F44223E63A18}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="13"
+              DTS:DTSID="{E9226E38-1688-43AC-9E5D-8FCE33E38F9D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="14"
+              DTS:DTSID="{51FFC6AA-0268-4BC2-9E08-6745F4189425}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="15"
+              DTS:DTSID="{F85F89C6-2EBF-457E-978E-0E982BF34351}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="16"
+              DTS:DTSID="{1321590B-9007-4862-8AFC-8C5AA01618A8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="17"
+              DTS:DTSID="{8216E587-10D9-44C7-8FD7-D68883302AF9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="18"
+              DTS:DTSID="{3C8AF26C-C2DD-4C27-844C-DD3E658BCF37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="19"
+              DTS:DTSID="{F17A1697-2826-47EE-97E9-6DFAFDC7EBAA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="20"
+              DTS:DTSID="{55C8E023-0998-44C5-A423-84469F197D08}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="21"
+              DTS:DTSID="{075916FB-E06D-4FE9-8E4E-BCD339819A06}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="22"
+              DTS:DTSID="{2D08CA92-6B97-48B5-9A03-00D4275621B9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Power Query Connection Manager]"
+      DTS:CreationName="PowerQuery"
+      DTS:DTSID="{8A8819D0-EE9B-4E3D-921F-9280584C11FE}"
+      DTS:ObjectName="Power Query Connection Manager">
+      <DTS:ObjectData>
+        <ConnectionManager
+          ConnectionString="[{&quot;kind&quot;:&quot;Folder&quot;,&quot;path&quot;:&quot;c:\\users\\olexander\\documents\\work\\15506\\folders&quot;,&quot;AuthenticationKind&quot;:&quot;Windows&quot;}]"
+          ConnectByProxy="False" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D8419F56-715C-4345-805C-B173A2746323}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Var_Create_Table">
+      <DTS:VariableValue
+        DTS:DataType="8">USE DATAWORK; CREATE TABLE [dbo].[Stage] ( [1] nvarchar(max) NULL, [2] nvarchar(max) NULL, [3] nvarchar(max) NULL, [4] nvarchar(max) NULL, [5] nvarchar(max) NULL, [6] nvarchar(max) NULL, [7] nvarchar(max) NULL, [8] nvarchar(max) NULL, [9] nvarchar(max) NULL, [10] nvarchar(max) NULL, [11] nvarchar(max) NULL, [12] nvarchar(max) NULL, [13] nvarchar(max) NULL, [14] nvarchar(max) NULL, [15] nvarchar(max) NULL, [16] nvarchar(max) NULL, [17] nvarchar(max) NULL, [18] nvarchar(max) NULL, [19] nvarchar(max) NULL, [20] nvarchar(max) NULL, [21] nvarchar(max) NULL, [22] nvarchar(max) NULL, [23] nvarchar(max) NULL, [24] nvarchar(max) NULL, [25] nvarchar(max) NULL, [26] nvarchar(max) NULL, [27] nvarchar(max) NULL, [28] nvarchar(max) NULL, [29] nvarchar(max) NULL, [30] nvarchar(max) NULL)</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F3F27508-0DEA-4A65-8364-972F7D6798F1}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Var_Drop_Table">
+      <DTS:VariableValue
+        DTS:DataType="8">USE DATAWORK; DROP TABLE IF EXISTS [dbo].[Stage];</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EF881275-1645-4210-8BA4-B704BA906477}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Var_PQ_Query">
+      <DTS:VariableValue
+        DTS:DataType="8">// Input let     Source = Folder.Files("C:\Users\Olexander\Documents\Work\15506\Folders"),     #"Filtered Hidden Files1" = Table.SelectRows(Source, each [Attributes]?[Hidden]? &lt;&gt; true),     #"Поділ стовпця за роздільником" = Table.SplitColumn(#"Filtered Hidden Files1", "Name", Splitter.SplitTextByEachDelimiter({"."}, QuoteStyle.Csv, false), {"Name", "Name.2"}),     #"Змінений тип" = Table.TransformColumnTypes(#"Поділ стовпця за роздільником",{{"Name", type text}, {"Name.2", type text}}),     #"Поділ стовпця за роздільником1" = Table.SplitColumn(#"Змінений тип", "Folder Path", Splitter.SplitTextByDelimiter("_", QuoteStyle.Csv), {"Folder Path.1", "Date"}),     #"Поділ стовпця за роздільником2" = Table.SplitColumn(#"Поділ стовпця за роздільником1", "Date", Splitter.SplitTextByDelimiter("\", QuoteStyle.Csv), {"Date.1", "Date.2", "Date.3"}),     #"Розділити стовпець за положенням" = Table.SplitColumn(#"Поділ стовпця за роздільником2", "Date.2", Splitter.SplitTextByPositions({0, 2}, false), {"Date.2.1", "Date.2.2"}),     #"Додане настроюване значення" = Table.AddColumn(#"Розділити стовпець за положенням", "Date", each "01" &amp; "." &amp; [Date.2.2] &amp; "." &amp;  [Date.1]),     #"Змінений тип1" = Table.TransformColumnTypes(#"Додане настроюване значення",{{"Date", type date}}),     #"Видалені інші стовпці1" = Table.SelectColumns(#"Змінений тип1",{"Content", "Name", "Date"}),     #"Перевпорядковані стовпці" = Table.ReorderColumns(#"Видалені інші стовпці1",{"Name", "Date", "Content"}),     #"Відфільтровані приховані файли1" = Table.SelectRows(#"Перевпорядковані стовпці", each [Attributes]?[Hidden]? &lt;&gt; true),     Green =             let                 Джерело = (Параметр2) =&gt; let                     Джерело = Excel.Workbook(Параметр2, null, true)                                      in                     Джерело             in                 Джерело,     #"Викликати спеціальну функцію1" = Table.AddColumn(#"Відфільтровані приховані файли1", "Green", each Green([Content])),     #"Розгорнуто: Green" = Table.ExpandTableColumn(#"Викликати спеціальну функцію1", "Green", {"Name", "Data"}, {"Green.Name", "Green.Data"}),     #"Відфільтровані рядки" = Table.SelectRows(#"Розгорнуто: Green", each ([#"Green.Name"] &lt;&gt; "Database")),     #"Видалені інші стовпці" = Table.SelectColumns(#"Відфільтровані рядки",{"Name", "Date", "Green.Data"}),     #"Розгорнуто: Green.Data" = Table.ExpandTableColumn(#"Видалені інші стовпці", "Green.Data", {"Column1", "Column2", "Column3", "Column4", "Column5", "Column6", "Column7", "Column8", "Column9", "Column10", "Column11", "Column12", "Column13", "Column14", "Column15", "Column16", "Column17","Column18","Column19","Column20"}, {"Column1", "Column2", "Column3", "Column4", "Column5", "Column6", "Column7", "Column8", "Column9", "Column10", "Column11", "Column12", "Column13", "Column14", "Column15", "Column16", "Column17","Column18","Column19","Column20"}),     #"Обітнутий текстA" = Table.TransformColumns(#"Розгорнуто: Green.Data",{{"Column1", Text.Trim, type text}}),     #"Відфільтровані рядки3" = Table.SelectRows(#"Обітнутий текстA", each ([Column1] &lt;&gt; null and [Column1] &lt;&gt; "    " and [Column1] &lt;&gt; "КОД КПО 000301                                                            Запорізька ТЕС        " and [Column1] &lt;&gt; "КОД КПО 000302                                                            Криворізька ТЕС        " and [Column1] &lt;&gt; "КОД КПО 000303                                                            Приднiпровська ТЕС        " and [Column1] &lt;&gt; "КОД КПО 000401                                                            Зуївська ТЕС-2       " and [Column1] &lt;&gt; "КОД КПО 000402                                                            Курахівська ТЕС        " and [Column1] &lt;&gt; "КОД КПО 000403                                                            Луганська ТЕС        " and [Column1] &lt;&gt; "КОД КПО 000404                                                            Слов'янська ТЕС        " and [Column1] &lt;&gt; "п/п" and [Column1] &lt;&gt; "№")),     #"Змінений типB" = Table.TransformColumnTypes(#"Відфільтровані рядки3",{{"Column1", type text}}),     #"Додане настроюване значення1" = Table.AddColumn(#"Змінений типB", "TableType", each if Text.Contains([Column1], "Загальностанційні показники") then "Загальностанційні показники" else if Text.Contains([Column1], "Показники  парових турбін") then "Показники парових турбін" else if Text.Contains([Column1], "Показники  парових котлів") then "Показники парових котлів" else if Text.Contains([Column1], "Показники  водогрiйних котлiв") then "Показники водогрiйних котлiв" else null),     #"Заповнено вниз" = Table.FillDown(#"Додане настроюване значення1",{"TableType"}),     #"AFilt" = Table.SelectRows(#"Заповнено вниз", each ([Column1] &lt;&gt; "                           за  1997:1 - 1997:1                             І. Загальностанційні показники                                     Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Запорізька ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Запорізька ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Зуївська ТЕС-2                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Зуївська ТЕС-2                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Криворізька ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Криворізька ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Курахівська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Курахівська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Луганська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Луганська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Приднiпровська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Приднiпровська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Слов'янська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "                           за  1997:1 - 1997:1  Слов'янська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; " п/п" and [Column1] &lt;&gt; " Файл сформовано 19.08.2013 о 17:23:48" and [Column1] &lt;&gt; " Файл сформовано 19.08.2013 о 17:23:51" and [Column1] &lt;&gt; " Файл сформовано 19.08.2013 о 17:23:56" and [Column1] &lt;&gt; " Файл сформовано 19.08.2013 о 17:23:59" and [Column1] &lt;&gt; " Файл сформовано 19.08.2013 о 17:24:1" and [Column1] &lt;&gt; " Файл сформовано 19.08.2013 о 17:24:4" and [Column1] &lt;&gt; " Файл сформовано 19.08.2013 о 17:40:13" and [Column1] &lt;&gt; " Файл сформовано 19.08.2013 о 17:40:15" and [Column1] &lt;&gt; " №" and [Column1] &lt;&gt; "***МІHПАЛИВЕHЕРГО УКРАІHИ***       ТЕХHІКО-ЕКОHОМІЧHІ    ПОКАЗHИКИ  РОБОТИ УСТАТКУВАHHЯ")),     #"Обітнутий текстC" = Table.TransformColumns(#"AFilt",{{"Column2", Text.Trim, type text}}),     #"Відфільтровані рядки1" = Table.SelectRows(#"Обітнутий текстC", each ([Column1] &lt;&gt; "" and [Column1] &lt;&gt; "за  1997:1 - 1997:1                             І. Загальностанційні показники                                     Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Запорізька ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Запорізька ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Зуївська ТЕС-2                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Зуївська ТЕС-2                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Криворізька ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Криворізька ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Курахівська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Курахівська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Луганська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Луганська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Приднiпровська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Приднiпровська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Слов'янська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "за  1997:1 - 1997:1  Слов'янська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] &lt;&gt; "КОД КПО 000301                                                            Запорізька ТЕС" and [Column1] &lt;&gt; "КОД КПО 000302                                                            Криворізька ТЕС" and [Column1] &lt;&gt; "КОД КПО 000303                                                            Приднiпровська ТЕС" and [Column1] &lt;&gt; "КОД КПО 000401                                                            Зуївська ТЕС-2" and [Column1] &lt;&gt; "КОД КПО 000402                                                            Курахівська ТЕС" and [Column1] &lt;&gt; "КОД КПО 000403                                                            Луганська ТЕС" and [Column1] &lt;&gt; "КОД КПО 000404                                                            Слов'янська ТЕС" and [Column1] &lt;&gt; "КОД КПО 000405                                                            Старобешівська ТЕС" and [Column1] &lt;&gt; "Файл сформовано 19.08.2013 о 17:23:48" and [Column1] &lt;&gt; "Файл сформовано 19.08.2013 о 17:23:51" and [Column1] &lt;&gt; "Файл сформовано 19.08.2013 о 17:23:56" and [Column1] &lt;&gt; "Файл сформовано 19.08.2013 о 17:23:59" and [Column1] &lt;&gt; "Файл сформовано 19.08.2013 о 17:24:1" and [Column1] &lt;&gt; "Файл сформовано 19.08.2013 о 17:24:4" and [Column1] &lt;&gt; "Файл сформовано 19.08.2013 о 17:40:13" and [Column1] &lt;&gt; "Файл сформовано 19.08.2013 о 17:40:15")),     #"Відфільтровані рядки2" = Table.SelectRows(#"Відфільтровані рядки1", each not Text.Contains([Column1], "2020")) in     #"Відфільтровані рядки2"</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\ADD DATA TO STAGE"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{3B6123E7-2988-42BA-858F-EE75F709CE64}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="ADD DATA TO STAGE"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\ADD DATA TO STAGE\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1058"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ADD DATA TO STAGE\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Name]"
+                      cachedDataType="nText"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[1]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Date]"
+                      cachedDataType="dbDate"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[2]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column1]"
+                      cachedDataType="nText"
+                      cachedName="Column1"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[3]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column1]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column2]"
+                      cachedDataType="nText"
+                      cachedName="Column2"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[4]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column2]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column3]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column3"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[5]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column3]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column4]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column4"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[6]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column4]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column5]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column5"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[7]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column5]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column6]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column6"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[8]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column6]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column7]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column7"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[9]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column7]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column8]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column8"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[10]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column8]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column9]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column9"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[11]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column9]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column10]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column10"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[12]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column10]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column11]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column11"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[13]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column11]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column12]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column12"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[14]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column12]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column13]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column13"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[15]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column13]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column14]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column14"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[16]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column14]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column15]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column15"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[17]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column15]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column16]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column16"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[18]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column16]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column17]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column17"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[19]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column17]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column18]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column18"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[20]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column18]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column19]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column19"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[21]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column19]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].Columns[Column20]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column20"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[22]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column20]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[1]"
+                      dataType="wstr"
+                      length="50"
+                      name="1" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[2]"
+                      dataType="wstr"
+                      length="50"
+                      name="2" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[3]"
+                      dataType="wstr"
+                      length="50"
+                      name="3" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[4]"
+                      dataType="wstr"
+                      length="50"
+                      name="4" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[5]"
+                      dataType="wstr"
+                      length="50"
+                      name="5" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[6]"
+                      dataType="wstr"
+                      length="50"
+                      name="6" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[7]"
+                      dataType="wstr"
+                      length="50"
+                      name="7" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[8]"
+                      dataType="wstr"
+                      length="50"
+                      name="8" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[9]"
+                      dataType="wstr"
+                      length="50"
+                      name="9" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[10]"
+                      dataType="wstr"
+                      length="50"
+                      name="10" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[11]"
+                      dataType="wstr"
+                      length="50"
+                      name="11" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[12]"
+                      dataType="wstr"
+                      length="50"
+                      name="12" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[13]"
+                      dataType="wstr"
+                      length="50"
+                      name="13" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[14]"
+                      dataType="wstr"
+                      length="50"
+                      name="14" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[15]"
+                      dataType="wstr"
+                      length="50"
+                      name="15" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[16]"
+                      dataType="wstr"
+                      length="50"
+                      name="16" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[17]"
+                      dataType="wstr"
+                      length="50"
+                      name="17" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[18]"
+                      dataType="wstr"
+                      length="50"
+                      name="18" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[19]"
+                      dataType="wstr"
+                      length="50"
+                      name="19" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[20]"
+                      dataType="wstr"
+                      length="50"
+                      name="20" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[21]"
+                      dataType="wstr"
+                      length="50"
+                      name="21" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[22]"
+                      dataType="wstr"
+                      length="50"
+                      name="22" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\ADD DATA TO STAGE\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\ADD DATA TO STAGE\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ADD DATA TO STAGE\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\ADD DATA TO STAGE\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ADD DATA TO STAGE\Multicast.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\ADD DATA TO STAGE\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\ADD DATA TO STAGE\Multicast.Outputs[Multicast Output 3]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\ADD DATA TO STAGE\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ADD DATA TO STAGE\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Stage]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1251</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ADD DATA TO STAGE\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Connector to DataWork]"
+                  connectionManagerRefId="Package.ConnectionManagers[Connector to DataWork]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Name]"
+                      cachedDataType="nText"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[1]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date]"
+                      cachedDataType="dbDate"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[2]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column1]"
+                      cachedDataType="nText"
+                      cachedName="Column1"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[3]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column1]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column2]"
+                      cachedDataType="nText"
+                      cachedName="Column2"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[4]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column2]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column3]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column3"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[5]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column3]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column4]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column4"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[6]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column4]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column5]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column5"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[7]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column5]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column6]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column6"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[8]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column6]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column7]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column7"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[9]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column7]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column8]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column8"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[10]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column8]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column9]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column9"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[11]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column9]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column10]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column10"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[12]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column10]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column11]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column11"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[13]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column11]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column12]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column12"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[14]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column12]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column13]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column13"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[15]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column13]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column14]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column14"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[16]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column14]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column15]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column15"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[17]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column15]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column16]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column16"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[18]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column16]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column17]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column17"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[19]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column17]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column18]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column18"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[20]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column18]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column19]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column19"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[21]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column19]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Column20]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="Column20"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[22]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column20]" />
+                    <inputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TableType]"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
+                      cachedName="TableType"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[23]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[TableType]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[1]"
+                      dataType="nText"
+                      name="1" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[2]"
+                      dataType="nText"
+                      name="2" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[3]"
+                      dataType="nText"
+                      name="3" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[4]"
+                      dataType="nText"
+                      name="4" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[5]"
+                      dataType="nText"
+                      name="5" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[6]"
+                      dataType="nText"
+                      name="6" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[7]"
+                      dataType="nText"
+                      name="7" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[8]"
+                      dataType="nText"
+                      name="8" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[9]"
+                      dataType="nText"
+                      name="9" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[10]"
+                      dataType="nText"
+                      name="10" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[11]"
+                      dataType="nText"
+                      name="11" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[12]"
+                      dataType="nText"
+                      name="12" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[13]"
+                      dataType="nText"
+                      name="13" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[14]"
+                      dataType="nText"
+                      name="14" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[15]"
+                      dataType="nText"
+                      name="15" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[16]"
+                      dataType="nText"
+                      name="16" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[17]"
+                      dataType="nText"
+                      name="17" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[18]"
+                      dataType="nText"
+                      name="18" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[19]"
+                      dataType="nText"
+                      name="19" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[20]"
+                      dataType="nText"
+                      name="20" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[21]"
+                      dataType="nText"
+                      name="21" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[22]"
+                      dataType="nText"
+                      name="22" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[23]"
+                      dataType="nText"
+                      name="23" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[24]"
+                      dataType="nText"
+                      name="24" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[25]"
+                      dataType="nText"
+                      name="25" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[26]"
+                      dataType="nText"
+                      name="26" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[27]"
+                      dataType="nText"
+                      name="27" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[28]"
+                      dataType="nText"
+                      name="28" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[29]"
+                      dataType="nText"
+                      name="29" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[30]"
+                      dataType="nText"
+                      name="30" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\ADD DATA TO STAGE\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\ADD DATA TO STAGE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\ADD DATA TO STAGE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\ADD DATA TO STAGE\Power Query Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              description="Power Query Source"
+              name="Power Query Source">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode of the query."
+                  name="QueryMode"
+                  typeConverter="Microsoft.SqlServer.IntegrationServices.PowerQuery.TypeConverters.QueryModeTypeConverter">0</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the M query to be executed."
+                  name="SingleQueryVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The single M query to be executed."
+                  name="SingleQueryText"
+                  state="cdata"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"><![CDATA[// Input
+let
+    Source = Folder.Files("C:\Users\Olexander\Documents\Work\15506\Folders"),
+    #"Filtered Hidden Files1" = Table.SelectRows(Source, each [Attributes]?[Hidden]? <> true),
+    #"Поділ стовпця за роздільником" = Table.SplitColumn(#"Filtered Hidden Files1", "Name", Splitter.SplitTextByEachDelimiter({"."}, QuoteStyle.Csv, false), {"Name", "Name.2"}),
+    #"Змінений тип" = Table.TransformColumnTypes(#"Поділ стовпця за роздільником",{{"Name", type text}, {"Name.2", type text}}),
+    #"Поділ стовпця за роздільником1" = Table.SplitColumn(#"Змінений тип", "Folder Path", Splitter.SplitTextByDelimiter("_", QuoteStyle.Csv), {"Folder Path.1", "Date"}),
+    #"Поділ стовпця за роздільником2" = Table.SplitColumn(#"Поділ стовпця за роздільником1", "Date", Splitter.SplitTextByDelimiter("\", QuoteStyle.Csv), {"Date.1", "Date.2", "Date.3"}),
+    #"Розділити стовпець за положенням" = Table.SplitColumn(#"Поділ стовпця за роздільником2", "Date.2", Splitter.SplitTextByPositions({0, 2}, false), {"Date.2.1", "Date.2.2"}),
+    #"Додане настроюване значення" = Table.AddColumn(#"Розділити стовпець за положенням", "Date", each "01" & "." & [Date.2.2] & "." &  [Date.1]),
+    #"Змінений тип1" = Table.TransformColumnTypes(#"Додане настроюване значення",{{"Date", type date}}),
+    #"Видалені інші стовпці1" = Table.SelectColumns(#"Змінений тип1",{"Content", "Name", "Date"}),
+    #"Перевпорядковані стовпці" = Table.ReorderColumns(#"Видалені інші стовпці1",{"Name", "Date", "Content"}),
+    #"Відфільтровані приховані файли1" = Table.SelectRows(#"Перевпорядковані стовпці", each [Attributes]?[Hidden]? <> true),
+    Green =
+            let
+                Джерело = (Параметр2) => let
+                    Джерело = Excel.Workbook(Параметр2, null, true)
+                    
+                in
+                    Джерело
+            in
+                Джерело,
+    #"Викликати спеціальну функцію1" = Table.AddColumn(#"Відфільтровані приховані файли1", "Green", each Green([Content])),
+    #"Розгорнуто: Green" = Table.ExpandTableColumn(#"Викликати спеціальну функцію1", "Green", {"Name", "Data"}, {"Green.Name", "Green.Data"}),
+    #"Відфільтровані рядки" = Table.SelectRows(#"Розгорнуто: Green", each ([#"Green.Name"] <> "Database")),
+    #"Видалені інші стовпці" = Table.SelectColumns(#"Відфільтровані рядки",{"Name", "Date", "Green.Data"}),
+    #"Розгорнуто: Green.Data" = Table.ExpandTableColumn(#"Видалені інші стовпці", "Green.Data", {"Column1", "Column2", "Column3", "Column4", "Column5", "Column6", "Column7", "Column8", "Column9", "Column10", "Column11", "Column12", "Column13", "Column14", "Column15", "Column16", "Column17","Column18","Column19","Column20"}, {"Column1", "Column2", "Column3", "Column4", "Column5", "Column6", "Column7", "Column8", "Column9", "Column10", "Column11", "Column12", "Column13", "Column14", "Column15", "Column16", "Column17","Column18","Column19","Column20"}),
+    #"Обітнутий текстA" = Table.TransformColumns(#"Розгорнуто: Green.Data",{{"Column1", Text.Trim, type text}}),
+    #"Відфільтровані рядки3" = Table.SelectRows(#"Обітнутий текстA", each ([Column1] <> null and [Column1] <> "    " and [Column1] <> "КОД КПО 000301                                                            Запорізька ТЕС        " and [Column1] <> "КОД КПО 000302                                                            Криворізька ТЕС        " and [Column1] <> "КОД КПО 000303                                                            Приднiпровська ТЕС        " and [Column1] <> "КОД КПО 000401                                                            Зуївська ТЕС-2       " and [Column1] <> "КОД КПО 000402                                                            Курахівська ТЕС        " and [Column1] <> "КОД КПО 000403                                                            Луганська ТЕС        " and [Column1] <> "КОД КПО 000404                                                            Слов'янська ТЕС        " and [Column1] <> "п/п" and [Column1] <> "№")),
+    #"Змінений типB" = Table.TransformColumnTypes(#"Відфільтровані рядки3",{{"Column1", type text}}),
+    #"Додане настроюване значення1" = Table.AddColumn(#"Змінений типB", "TableType", each if Text.Contains([Column1], "Загальностанційні показники") then "Загальностанційні показники" else if Text.Contains([Column1], "Показники  парових турбін") then "Показники парових турбін" else if Text.Contains([Column1], "Показники  парових котлів") then "Показники парових котлів" else if Text.Contains([Column1], "Показники  водогрiйних котлiв") then "Показники водогрiйних котлiв" else null),
+    #"Заповнено вниз" = Table.FillDown(#"Додане настроюване значення1",{"TableType"}),
+    #"AFilt" = Table.SelectRows(#"Заповнено вниз", each ([Column1] <> "                           за  1997:1 - 1997:1                             І. Загальностанційні показники                                     Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Запорізька ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Запорізька ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Зуївська ТЕС-2                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Зуївська ТЕС-2                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Криворізька ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Криворізька ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Курахівська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Курахівська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Луганська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Луганська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Приднiпровська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Приднiпровська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Слов'янська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "                           за  1997:1 - 1997:1  Слов'янська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> " п/п" and [Column1] <> " Файл сформовано 19.08.2013 о 17:23:48" and [Column1] <> " Файл сформовано 19.08.2013 о 17:23:51" and [Column1] <> " Файл сформовано 19.08.2013 о 17:23:56" and [Column1] <> " Файл сформовано 19.08.2013 о 17:23:59" and [Column1] <> " Файл сформовано 19.08.2013 о 17:24:1" and [Column1] <> " Файл сформовано 19.08.2013 о 17:24:4" and [Column1] <> " Файл сформовано 19.08.2013 о 17:40:13" and [Column1] <> " Файл сформовано 19.08.2013 о 17:40:15" and [Column1] <> " №" and [Column1] <> "***МІHПАЛИВЕHЕРГО УКРАІHИ***       ТЕХHІКО-ЕКОHОМІЧHІ    ПОКАЗHИКИ  РОБОТИ УСТАТКУВАHHЯ")),
+    #"Обітнутий текстC" = Table.TransformColumns(#"AFilt",{{"Column2", Text.Trim, type text}}),
+    #"Відфільтровані рядки1" = Table.SelectRows(#"Обітнутий текстC", each ([Column1] <> "" and [Column1] <> "за  1997:1 - 1997:1                             І. Загальностанційні показники                                     Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Запорізька ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Запорізька ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Зуївська ТЕС-2                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Зуївська ТЕС-2                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Криворізька ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Криворізька ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Курахівська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Курахівська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Луганська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Луганська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Приднiпровська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Приднiпровська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Слов'янська ТЕС                            ІІІ. Показники  парових котлів                                         Форма No3-тех-ТЕС" and [Column1] <> "за  1997:1 - 1997:1  Слов'янська ТЕС                          ІІ. Показники  парових турбін                                                   Форма No3-тех-ТЕС" and [Column1] <> "КОД КПО 000301                                                            Запорізька ТЕС" and [Column1] <> "КОД КПО 000302                                                            Криворізька ТЕС" and [Column1] <> "КОД КПО 000303                                                            Приднiпровська ТЕС" and [Column1] <> "КОД КПО 000401                                                            Зуївська ТЕС-2" and [Column1] <> "КОД КПО 000402                                                            Курахівська ТЕС" and [Column1] <> "КОД КПО 000403                                                            Луганська ТЕС" and [Column1] <> "КОД КПО 000404                                                            Слов'янська ТЕС" and [Column1] <> "КОД КПО 000405                                                            Старобешівська ТЕС" and [Column1] <> "Файл сформовано 19.08.2013 о 17:23:48" and [Column1] <> "Файл сформовано 19.08.2013 о 17:23:51" and [Column1] <> "Файл сформовано 19.08.2013 о 17:23:56" and [Column1] <> "Файл сформовано 19.08.2013 о 17:23:59" and [Column1] <> "Файл сформовано 19.08.2013 о 17:24:1" and [Column1] <> "Файл сформовано 19.08.2013 о 17:24:4" and [Column1] <> "Файл сформовано 19.08.2013 о 17:40:13" and [Column1] <> "Файл сформовано 19.08.2013 о 17:40:15")),
+    #"Відфільтровані рядки2" = Table.SelectRows(#"Відфільтровані рядки1", each not Text.Contains([Column1], "2020"))
+in
+    #"Відфільтровані рядки2"
+]]></property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.PowerQuerySource</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\ADD DATA TO STAGE\Power Query Source.Connections[Folder Connection]"
+                  connectionManagerID="Package.ConnectionManagers[Power Query Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Power Query Connection Manager]"
+                  description="Folder/c:\users\olexander\documents\work\15506\folders"
+                  name="Folder Connection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output]"
+                  name="Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Name]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Name]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Date]"
+                      dataType="dbDate"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Date]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Date]"
+                      name="Date" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column1]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column1]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column1]"
+                      name="Column1" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column2]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column2]"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column2]"
+                      name="Column2" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column3]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column3]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column3]"
+                      name="Column3" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column4]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column4]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column4]"
+                      name="Column4" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column5]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column5]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column5]"
+                      name="Column5" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column6]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column6]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column6]"
+                      name="Column6" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column7]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column7]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column7]"
+                      name="Column7" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column8]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column8]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column8]"
+                      name="Column8" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column9]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column9]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column9]"
+                      name="Column9" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column10]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column10]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column10]"
+                      name="Column10" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column11]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column11]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column11]"
+                      name="Column11" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column12]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column12]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column12]"
+                      name="Column12" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column13]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column13]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column13]"
+                      name="Column13" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column14]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column14]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column14]"
+                      name="Column14" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column15]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column15]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column15]"
+                      name="Column15" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column16]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column16]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column16]"
+                      name="Column16" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column17]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column17]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column17]"
+                      name="Column17" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column18]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column18]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column18]"
+                      name="Column18" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column19]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column19]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column19]"
+                      name="Column19" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column20]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column20]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[Column20]"
+                      name="Column20" />
+                    <outputColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[TableType]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[TableType]"
+                      length="4000"
+                      lineageId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].Columns[TableType]"
+                      name="TableType" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Name]"
+                      dataType="nText"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Date]"
+                      dataType="dbDate"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column1]"
+                      dataType="nText"
+                      name="Column1" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column2]"
+                      dataType="nText"
+                      name="Column2" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column3]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column3" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column4]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column4" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column5]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column5" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column6]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column6" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column7]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column7" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column8]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column8" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column9]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column9" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column10]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column10" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column11]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column11" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column12]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column12" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column13]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column13" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column14]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column14" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column15]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column15" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column16]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column16" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column17]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column17" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column18]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column18" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column19]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column19" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[Column20]"
+                      dataType="wstr"
+                      length="4000"
+                      name="Column20" />
+                    <externalMetadataColumn
+                      refId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output].ExternalColumns[TableType]"
+                      dataType="wstr"
+                      length="4000"
+                      name="TableType" />
+                  </externalMetadataColumns>
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\ADD DATA TO STAGE.Paths[Multicast Output 1]"
+              endId="Package\ADD DATA TO STAGE\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 1"
+              startId="Package\ADD DATA TO STAGE\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\ADD DATA TO STAGE.Paths[Multicast Output 2]"
+              endId="Package\ADD DATA TO STAGE\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Multicast Output 2"
+              startId="Package\ADD DATA TO STAGE\Multicast.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\ADD DATA TO STAGE.Paths[Output]"
+              endId="Package\ADD DATA TO STAGE\Multicast.Inputs[Multicast Input 1]"
+              name="Output"
+              startId="Package\ADD DATA TO STAGE\Power Query Source.Outputs[Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\CREATE TABLE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{5D1106EB-A58C-4407-BCA6-15EAC5333B9F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CREATE TABLE"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022 CTP2.0; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{A532D465-BAAB-4424-AEE5-BBC4D16FA3B6}"
+          SQLTask:SqlStmtSourceType="Variable"
+          SQLTask:SqlStatementSource="User::Var_Create_Table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DROP TABLE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{466E0952-FFCE-41F0-9BBF-1D45EC30321E}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DROP TABLE"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022 CTP2.0; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{A532D465-BAAB-4424-AEE5-BBC4D16FA3B6}"
+          SQLTask:SqlStmtSourceType="Variable"
+          SQLTask:SqlStatementSource="User::Var_Drop_Table" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{A9470B05-5157-4A87-A986-FC1012CF90FD}"
+      DTS:From="Package\DROP TABLE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\CREATE TABLE" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{86E0FF3E-695C-4069-A24C-9EC61A791198}"
+      DTS:From="Package\CREATE TABLE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\ADD DATA TO STAGE" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="193,42"
+          Id="Package\ADD DATA TO STAGE"
+          TopLeft="347,259" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\CREATE TABLE"
+          TopLeft="163,152" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\DROP TABLE"
+          TopLeft="98,31" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="172.5,73">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="71,79"
+              Start="0,0"
+              End="71,71.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.5"
+                    Point2="0,39.5"
+                    Point3="4,39.5" />
+                  <mssgle:LineSegment
+                    End="67,39.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="67,39.5"
+                    Point2="71,39.5"
+                    Point3="71,43.5" />
+                  <mssgle:LineSegment
+                    End="71,71.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="243.5,194">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="200,65"
+              Start="0,0"
+              End="200,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.5"
+                    Point2="0,32.5"
+                    Point3="4,32.5" />
+                  <mssgle:LineSegment
+                    End="196,32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="196,32.5"
+                    Point2="200,32.5"
+                    Point3="200,36.5" />
+                  <mssgle:LineSegment
+                    End="200,57.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\ADD DATA TO STAGE">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="181,42"
+          Id="Package\ADD DATA TO STAGE\Power Query Source"
+          TopLeft="172,17" />
+        <NodeLayout
+          Size="123,42"
+          Id="Package\ADD DATA TO STAGE\Multicast"
+          TopLeft="231,111" />
+        <EdgeLayout
+          Id="Package\ADD DATA TO STAGE.Paths[Output]"
+          TopLeft="262.5,59">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="30,52"
+              Start="0,0"
+              End="30,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="4,26" />
+                  <mssgle:LineSegment
+                    End="26,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="26,26"
+                    Point2="30,26"
+                    Point3="30,30" />
+                  <mssgle:LineSegment
+                    End="30,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="7,31,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="177,42"
+          Id="Package\ADD DATA TO STAGE\OLE DB Destination"
+          TopLeft="85,225" />
+        <EdgeLayout
+          Id="Package\ADD DATA TO STAGE.Paths[Multicast Output 1]"
+          TopLeft="292.5,153">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-119,72"
+              Start="0,0"
+              End="-119,64.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32"
+                    Point2="0,36"
+                    Point3="-4,36" />
+                  <mssgle:LineSegment
+                    End="-115,36" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-115,36"
+                    Point2="-119,36"
+                    Point3="-119,40" />
+                  <mssgle:LineSegment
+                    End="-119,64.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-67.5,41,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="176,42"
+          Id="Package\ADD DATA TO STAGE\Flat File Destination"
+          TopLeft="400,203" />
+        <EdgeLayout
+          Id="Package\ADD DATA TO STAGE.Paths[Multicast Output 2]"
+          TopLeft="311.666666666667,153">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="176.333333333333,50"
+              Start="0,0"
+              End="176.333333333333,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.3852327447833" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.3852327447833"
+                    Point2="0,20.3852327447833"
+                    Point3="4,20.3852327447833" />
+                  <mssgle:LineSegment
+                    End="172.333333333333,20.3852327447833" />
+                  <mssgle:CubicBezierSegment
+                    Point1="172.333333333333,20.3852327447833"
+                    Point2="176.333333333333,20.3852327447833"
+                    Point3="176.333333333333,24.3852327447833" />
+                  <mssgle:LineSegment
+                    End="176.333333333333,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="80.1666666666667,25.3852327447833,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\ADD DATA TO STAGE\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

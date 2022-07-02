@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>TransformationOfArchiveData</Name>
-    <LastWriteTime>2022-07-02T15:28:09.3059611Z</LastWriteTime>
+    <LastWriteTime>2022-07-02T16:10:22.5101819Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Package.dtsx</Name>
-      <LastWriteTime>2022-07-02T15:28:20.8139349Z</LastWriteTime>
+      <Name>Staging.dtsx</Name>
+      <LastWriteTime>2022-07-02T16:11:28.3404475Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
