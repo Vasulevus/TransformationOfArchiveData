@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-B7TTBGH</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl4y7U5Eye0yRS3iNQ4KC9AAAAAACAAAAAAAQZgAAAAEAACAAAADwJQyn4LYNKofiJSYMgmMLCVbXoLigo4qjlyVpp5ZnjAAAAAAOgAAAAAIAACAAAAAAXrCLuyxRv7bAX3NJzrwzq4P7d4MrZbvAKbuhky3o5JAAAAARtk0vj+/CqJH/RspV31uwv+ePmFDwuUC/KbkfvDpB76eDfXu316wNWLeqyD+Y3CvAoV3U3bMG0hLrT4kzLaYflCzMippZlHIIUO8eJHWfpklY5340aKK7i/3pznDGHOL39HhC5kBROMr1EltMQ3qD68vUYT8qsWRJPfIcBUdQpM6w0nnfc+yK1R/oDXna+NBAAAAAFoly5OkjUs+YD01oxefkhf8udEZK3Bm68AZBV+sbV9l6ZfCz+sokEplPgN42NvD9pVZL5P3XlM4rk8HFfPp1HQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl4y7U5Eye0yRS3iNQ4KC9AAAAAACAAAAAAAQZgAAAAEAACAAAABz514GIBMJ3pTUgtvZWgiJqILgdiXfYb/xp/8FBKu8IAAAAAAOgAAAAAIAACAAAABFx1z9UUcS18RoXvbc08wFwvOBhk6obsuTA6f7+HoygJAAAADWT81ARUUDcR6xkfwrWtsRN0AeRQJd3XYGvzTQOu1Hbsrv31XhoPihZuxds0C9fHNFJo22CCkAJHRgviyK2TcMxJRSxmH3wwFLel6VG+HOYzVLgF38gGwdx2x7RkVB7L7KxAEe8NTK96X6KM6ammkPCfgwJAIWiNi2Fv9pAyd7UEja5UnpBbnA/t0JAU45o4hAAAAAIYMj8xebQhwylMrq26/9BSAejj/Z1yBdFQSDhF/JPafLevppinUmbSWpuBQlGq+XStR/wBIzOxpqL4ld54xGZA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,17 +42,17 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{A7F75FD6-328F-467A-BC64-0C028A3144E6}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{8ED6F53E-C731-4132-AF3B-C9B78E1F8B7B}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-B7TTBGH\MULTIDIMENTIONAL.DataWork.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.Connector to DataWork.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -67,7 +67,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-B7TTBGH\MULTIDIMENTIONAL.DataWork.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.Connector to DataWork.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -82,7 +82,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-B7TTBGH\MULTIDIMENTIONAL.DataWork.ConnectRetryCount">
+                <SSIS:Parameter SSIS:Name="CM.Connector to DataWork.ConnectRetryCount">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -97,7 +97,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-B7TTBGH\MULTIDIMENTIONAL.DataWork.ConnectRetryInterval">
+                <SSIS:Parameter SSIS:Name="CM.Connector to DataWork.ConnectRetryInterval">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -112,7 +112,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-B7TTBGH\MULTIDIMENTIONAL.DataWork.ConnectUsingManagedIdentity">
+                <SSIS:Parameter SSIS:Name="CM.Connector to DataWork.ConnectUsingManagedIdentity">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -127,7 +127,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-B7TTBGH\MULTIDIMENTIONAL.DataWork.InitialCatalog">
+                <SSIS:Parameter SSIS:Name="CM.Connector to DataWork.InitialCatalog">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -142,7 +142,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-B7TTBGH\MULTIDIMENTIONAL.DataWork.Password">
+                <SSIS:Parameter SSIS:Name="CM.Connector to DataWork.Password">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -156,7 +156,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-B7TTBGH\MULTIDIMENTIONAL.DataWork.RetainSameConnection">
+                <SSIS:Parameter SSIS:Name="CM.Connector to DataWork.RetainSameConnection">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -171,7 +171,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-B7TTBGH\MULTIDIMENTIONAL.DataWork.ServerName">
+                <SSIS:Parameter SSIS:Name="CM.Connector to DataWork.ServerName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -186,7 +186,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.DESKTOP-B7TTBGH\MULTIDIMENTIONAL.DataWork.UserName">
+                <SSIS:Parameter SSIS:Name="CM.Connector to DataWork.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -225,7 +225,13 @@
         <LinkedAzureSSISIR />
         <LinkedAzureStorage />
         <RemoteExecutionFolder />
-        <ParameterConfigurationValues />
+        <ParameterConfigurationValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2022-07-02T15:18:30.2033213Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationValues>
       </Options>
     </Configuration>
   </Configurations>
